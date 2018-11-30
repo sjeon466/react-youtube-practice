@@ -33,6 +33,10 @@
   height: 34px;
 }
 
+.signIn {
+  margin: 10px;
+}
+
 .rightContainer {
   display: flex;
   color: yellow;

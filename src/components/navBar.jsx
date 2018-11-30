@@ -5,6 +5,10 @@ import "./navBar.css";
 import VideoButton from "./common/videoButton";
 import SearchButton from "./common/searchButton";
 import Logo from "./common/logo";
+import AppButton from "./common/appButton";
+import RecordButton from "./common/recordButton";
+import SettingsButton from "./common/settingsButton";
+import SignIn from "./common/signIn";
 class NavBar extends Component {
   state = {};
   render() {
@@ -27,15 +31,21 @@ class NavBar extends Component {
           </div>
         </div>
         <div className="rightContainer flex-center">
-          <div>
-            <h3>333-111</h3>
+          <div className="flex-center">
+            <RecordButton />
+          </div>
+          <div className="flex-center">
+            <AppButton />
           </div>
 
           <div className="flex-center">
             <VideoButton />
           </div>
-          <div>
-            <h3>333-222</h3>
+          <div className="flex-center">
+            <SettingsButton />
+          </div>
+          <div className="signIn flex-center">
+            <SignIn />
           </div>
         </div>
       </div>
