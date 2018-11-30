@@ -1,3 +1,16 @@
+.topicContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  border-style: inset;
+}
+
+.videoListContainer {
+  display: flex;
+  flex-direction: row;
+}
+
 .movieEntryContainer {
   margin: 0;
   padding: 0;
@@ -5,9 +18,4 @@
   border-style: dashed;
   width: 160px;
   height: 300px;
-}
-
-.videoListContainer {
-  display: flex;
-  flex-direction: row;
 }

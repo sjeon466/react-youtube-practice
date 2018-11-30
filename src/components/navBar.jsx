@@ -11,7 +11,7 @@ class NavBar extends Component {
     return (
       <div className="navBar">
         <div className="leftContainer">
-          <div className="buttonWrapper">
+          <div className="flex-center">
             <MenuButton />
           </div>
           <div className="logoWrapper flex-center">
