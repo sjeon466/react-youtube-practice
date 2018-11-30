@@ -1,0 +1,11 @@
+.sideBarItem {
+  display: flex;
+  flex-direction: row;
+  border-style: double;
+}
+
+.text {
+  margin-left: 10px;
+  justify-content: center;
+  align-self: center;
+}

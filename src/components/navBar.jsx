@@ -20,13 +20,10 @@ class NavBar extends Component {
         </div>
         <div className="searchContainer">
           <div className="searchBarWrapper">
-            <SearchBar className="searchBar" />
+            <SearchBar className="input" />
           </div>
           <div className="flex-center">
             <SearchButton />
-          </div>
-          <div>
-            <h1>222</h1>
           </div>
         </div>
         <div className="rightContainer flex-center">
