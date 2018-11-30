@@ -1,11 +1,15 @@
+.outerBodyContainer {
+}
+
 .bodyContainer {
   display: flex;
   flex-direction: row;
-  border-style: solid;
+
+  flex: 1;
 }
 
 .sideBarContainer {
-  border-style: dashed;
+  min-width: 300px;
   background: yellow;
   flex: 1;
 }

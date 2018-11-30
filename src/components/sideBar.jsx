@@ -11,7 +11,7 @@ class SideBar extends Component {
     const basicItems = getBasicItems();
     const categoryItems = getCategoryItems();
     return (
-      <div>
+      <div className="sideBarContainer">
         <div>
           <SideBarItem items={basicItems} />
         </div>

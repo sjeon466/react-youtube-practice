@@ -7,12 +7,14 @@ class Body extends Component {
   state = {};
   render() {
     return (
-      <div className="bodyContainer">
-        <div className="sideBarContainer">
-          <SideBar className="sideBar" />
-        </div>
-        <div className="mainContainer">
-          <Main className="main" />
+      <div className="outerBodyContainer">
+        <div className="bodyContainer">
+          <div className="sideBarContainer">
+            <SideBar className="sideBar" />
+          </div>
+          <div className="mainContainer">
+            <Main className="main" />
+          </div>
         </div>
       </div>
     );

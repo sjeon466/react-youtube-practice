@@ -12,27 +12,6 @@
   color: red;
   border-style: solid;
 }
-.searchBar {
-  flex: 1;
-  background: blueviolet;
-}
-
-.searchBarWrapper {
-  justify-content: center;
-  align-self: center;
-}
-
-.searchBarWrapper input {
-  height: 34px;
-  width: 400px;
-  display: flex;
-  flex: 1;
-}
-
-.buttonWrapper {
-  justify-content: center;
-  align-self: center;
-}
 
 .searchContainer {
   color: blue;
@@ -43,6 +22,15 @@
   background: green;
   align-self: center;
   justify-content: center;
+  margin-left: 5px;
+}
+.searchBarWrapper {
+  width: 100%;
+  max-width: 550px;
+}
+.input {
+  width: 100%;
+  height: 34px;
 }
 
 .rightContainer {
