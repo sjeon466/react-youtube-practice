@@ -1,0 +1,13 @@
+.movieEntryContainer {
+  margin: 0;
+  padding: 0;
+  color: black;
+  border-style: dashed;
+  width: 160px;
+  height: 300px;
+}
+
+.videoListContainer {
+  display: flex;
+  flex-direction: row;
+}

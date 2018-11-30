@@ -4,7 +4,7 @@ import {
   getCategoryItems
 } from "./../services/fakeSideBarServices";
 import SideBarItem from "./common/sideBarItem";
-import PracticeItem from "./practiceItem";
+
 class SideBar extends Component {
   state = {};
   render() {

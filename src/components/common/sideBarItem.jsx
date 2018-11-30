@@ -11,7 +11,7 @@ class SideBarItem extends Component {
     return (
       <div className="list">
         {items.map(item => (
-          <div className="sideBarItem">
+          <div className="sideBarItem" key={item.text}>
             {item.svg ? (
               <div>{makeImgFromSvg(item.svg)}</div>
             ) : (
