@@ -12,8 +12,12 @@
 .sideBarContainer {
   min-width: 300px;
   flex: 1;
+  background: #eee;
+  padding-top: 2px;
 }
 
 .mainContainer {
   flex: 5;
+  background: #fafafa;
+  padding-left: 20px;
 }

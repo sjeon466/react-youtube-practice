@@ -15,7 +15,9 @@ class SideBarItem extends Component {
             {item.svg ? (
               <div>{makeImgFromSvg(item.svg)}</div>
             ) : (
-              <div>{makeImgfromSrc(item.imgUrl)}</div>
+              <div>
+                {makeImgfromSrc(item.imgUrl, undefined, undefined, true)}
+              </div>
             )}
             <div className="text">{item.text}</div>
           </div>

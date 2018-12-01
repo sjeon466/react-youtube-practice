@@ -11,19 +11,21 @@
 .videoListContainer {
   display: flex;
   flex-direction: row;
-  height: 296px;
+  flex-wrap: wrap;
+}
+
+.topicTextContainer {
 }
 
 .topicText {
-  color: var(--yt-spec-text-primary);
   display: block;
   max-height: 2rem;
   overflow: hidden;
-  font-size: 1.4rem;
+  font-size: 1.2rem;
   font-weight: 500;
   line-height: 2rem;
-  padding: 0;
-  margin: 10px;
+
+  margin: 0px 0px 20px 0px;
 }
 
 .videoEntryContainer {
@@ -48,7 +50,7 @@
 }
 
 .videoTextContainer {
-  height: 91px;
+  min-height: 111px;
 }
 .creator {
   font-size: 1.3rem;
@@ -56,21 +58,11 @@
 }
 
 .content {
-  margin: 10px 0px 5px 5px;
+  margin: 2px 2px 10px 0px;
   color: black;
-  display: -webkit-box;
-  max-height: 3.2rem;
-  -webkit-box-orient: vertical;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: normal;
-  -webkit-line-clamp: 2;
+  max-height: 0.7rem;
   font-size: 1.1rem;
   font-weight: 100;
   line-height: 1.6rem;
   white-space: nowrap;
-  margin-left: 0;
-  display: block;
-  margin-right: -0.1em;
-  padding-right: 0.1em;
 }

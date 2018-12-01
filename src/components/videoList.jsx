@@ -8,14 +8,14 @@ class VideoList extends Component {
     const { videoEntries, currentTopic } = this.props;
     return (
       <div className="topicContainer">
-        <div>
+        <div className="topicTextContainer">
           <p className="topicText">{currentTopic}</p>
         </div>
 
         <div className="videoListContainer">
           {videoEntries.map(entry => (
             <div className="videoEntryContainer" key={entry.id}>
-              <div>{makeImgfromSrc(entry.videoUrl, 210, 117.5)}</div>
+              <div>{makeImgfromSrc(entry.videoUrl, 210, 121.5)}</div>
               <div className="videoTextContainer">
                 <p className="title">{entry.videoTitle}</p>
                 <p className="content">{entry.videoCreator}</p>

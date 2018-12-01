@@ -13,10 +13,10 @@ class SideBar extends Component {
     return (
       <div className="sideBarContainer">
         <div>
-          <SideBarItem items={basicItems} />
+          <SideBarItem className="text" items={basicItems} />
         </div>
         <hr className="hr" />
-        <h4>BEST OF YOUTUBE</h4>
+        <h4 className="text">BEST OF YOUTUBE</h4>
         <div>
           <SideBarItem items={categoryItems} />
         </div>
