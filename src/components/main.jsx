@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import { getTopics } from "./../services/fakeTopicServices";
 import VideoList from "./videoList";
+import "./main.css";
 class Main extends Component {
   state = {};
   render() {

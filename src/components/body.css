@@ -20,4 +20,5 @@
   flex: 5;
   background: #fafafa;
   padding-left: 20px;
+  display: flex;
 }

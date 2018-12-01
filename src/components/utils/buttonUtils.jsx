@@ -6,13 +6,22 @@ function createMarkup(svgSource) {
   };
 }
 
-export function makeButtonComponent(svgSource, width = 40, height = 40) {
+export function makeButtonComponent({
+  svgSource,
+  width,
+  height,
+  color,
+  borderType
+}) {
   return (
-    <div>
-      <button
-        style={{ width: width, height: height, color: "red" }}
-        dangerouslySetInnerHTML={createMarkup(svgSource)}
-      />
-    </div>
+    <button
+      style={{
+        width: width,
+        height: height,
+        backgroundColor: "white",
+        border: { borderType }
+      }}
+      dangerouslySetInnerHTML={createMarkup(svgSource)}
+    />
   );
 }
