@@ -41,7 +41,7 @@ export function getCategoryItems() {
     },
     {
       text: "TV Shows",
-      imgUrl: `//yt3.ggpht.com/a-/AN66SAwhH_FokcRmBbBOino1McW1aa_Yk1fsetD9Sg=s88-mo-c-c0xffffffff-rj-k-no`
+      imgUrl: `https://yt3.ggpht.com/a-/AN66SAwhH_FokcRmBbBOino1McW1aa_Yk1fsetD9Sg=s88-mo-c-c0xffffffff-rj-k-no`
     },
     {
       text: "News",

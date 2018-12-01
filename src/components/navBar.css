@@ -11,6 +11,12 @@
   display: flex;
   color: red;
   border-style: solid;
+  justify-content: center;
+  align-self: center;
+}
+
+.menuButton {
+  margin-right: 5px;
 }
 
 .searchContainer {
@@ -42,6 +48,8 @@
   color: yellow;
   border-style: solid;
   flex-direction: row;
+  justify-content: center;
+  align-self: center;
 }
 
 .flex-center {

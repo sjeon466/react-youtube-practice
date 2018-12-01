@@ -3,19 +3,76 @@
   flex-direction: column;
   justify-content: flex-start;
   align-items: flex-start;
-  border-style: inset;
+  border-style: dotted;
+  max-width: 1315px;
+  min-width: 428px;
 }
 
 .videoListContainer {
   display: flex;
   flex-direction: row;
+  height: 296px;
 }
 
-.movieEntryContainer {
+.topicText {
+  color: var(--yt-spec-text-primary);
+  display: block;
+  max-height: 2rem;
+  overflow: hidden;
+  font-size: 1.4rem;
+  font-weight: 500;
+  line-height: 2rem;
+  padding: 0;
+  margin: 10px;
+}
+
+.videoEntryContainer {
   margin: 0;
   padding: 0;
   color: black;
   border-style: dashed;
-  width: 160px;
-  height: 300px;
+  max-width: 210px;
+  margin-right: 5px;
+  cursor: pointer;
+}
+.videoTextContainer {
+  max-height: 178.5px;
+}
+
+.title {
+  margin: 0px 0px 0px 0px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: normal;
+  font-size: 1.3rem;
+  font-weight: 500;
+  line-height: 1.6rem;
+}
+
+.videoTextContainer {
+  height: 91px;
+}
+.creator {
+  font-size: 1.3rem;
+  font-weight: 500;
+}
+
+.content {
+  margin: 10px 0px 5px 5px;
+  color: black;
+  display: -webkit-box;
+  max-height: 3.2rem;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: normal;
+  -webkit-line-clamp: 2;
+  font-size: 1.1rem;
+  font-weight: 100;
+  line-height: 1.6rem;
+  white-space: nowrap;
+  margin-left: 0;
+  display: block;
+  margin-right: -0.1em;
+  padding-right: 0.1em;
 }

@@ -9,18 +9,20 @@ class VideoList extends Component {
     return (
       <div className="topicContainer">
         <div>
-          <h5>{currentTopic}</h5>
+          <p className="topicText">{currentTopic}</p>
         </div>
 
         <div className="videoListContainer">
           {videoEntries.map(entry => (
-            <div className="movieEntryContainer" key={entry.id}>
-              <div>{makeImgfromSrc(entry.videoUrl, 160, 110)}</div>
-              <h3>{entry.videoTitle}</h3>
-              <h4>{entry.videoCreator}</h4>
-              <h5>
-                {entry.numViews} views · {entry.createdTime} ago{" "}
-              </h5>
+            <div className="videoEntryContainer" key={entry.id}>
+              <div>{makeImgfromSrc(entry.videoUrl, 210, 117.5)}</div>
+              <div className="videoTextContainer">
+                <p className="title">{entry.videoTitle}</p>
+                <p className="content">{entry.videoCreator}</p>
+                <p className="content">
+                  {entry.numViews} views · {entry.createdTime} ago{" "}
+                </p>
+              </div>
             </div>
           ))}
         </div>

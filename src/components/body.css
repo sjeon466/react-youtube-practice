@@ -1,10 +1,11 @@
 .outerBodyContainer {
+  display: flex;
+  flex: 1;
 }
 
 .bodyContainer {
   display: flex;
   flex-direction: row;
-
   flex: 1;
 }
 
@@ -14,15 +15,9 @@
   flex: 1;
 }
 
-.sideBar {
-  flex: 1;
-}
-
 .main {
-  border-style: solid;
 }
 
 .mainContainer {
-  background: red;
   flex: 5;
 }
