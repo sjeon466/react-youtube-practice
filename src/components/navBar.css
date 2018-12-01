@@ -1,16 +1,12 @@
 .navBar {
   display: flex;
-  background: grey;
   flex-direction: row;
-  border-style: solid;
   justify-content: center;
   align-self: center;
 }
 
 .leftContainer {
   display: flex;
-  color: red;
-  border-style: solid;
   justify-content: center;
   align-self: center;
 }
@@ -20,12 +16,9 @@
 }
 
 .searchContainer {
-  color: blue;
   display: flex;
   flex: 1;
   flex-direction: row;
-  border-style: double;
-  background: green;
   align-self: center;
   justify-content: center;
   margin-left: 5px;
@@ -45,8 +38,6 @@
 
 .rightContainer {
   display: flex;
-  color: yellow;
-  border-style: solid;
   flex-direction: row;
   justify-content: center;
   align-self: center;

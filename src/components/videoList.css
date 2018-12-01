@@ -3,7 +3,7 @@
   flex-direction: column;
   justify-content: flex-start;
   align-items: flex-start;
-  border-style: dotted;
+
   max-width: 1315px;
   min-width: 428px;
 }
@@ -29,8 +29,6 @@
 .videoEntryContainer {
   margin: 0;
   padding: 0;
-  color: black;
-  border-style: dashed;
   max-width: 210px;
   margin-right: 5px;
   cursor: pointer;
@@ -44,7 +42,7 @@
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: normal;
-  font-size: 1.3rem;
+  font-size: 1.1rem;
   font-weight: 500;
   line-height: 1.6rem;
 }

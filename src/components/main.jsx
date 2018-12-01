@@ -6,11 +6,12 @@ class Main extends Component {
   render() {
     const topics = getTopics();
     return (
-      <div>
-        <div className="mainContainer">
+      <div className="mainContainer">
+        <div className="ttttt">
           {topics.map(topic => (
             <div className="topic" key={topic.title}>
               <VideoList
+                className="ttt"
                 videoEntries={topic.videos}
                 currentTopic={topic.title}
               />

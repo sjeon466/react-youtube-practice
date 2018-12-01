@@ -1,0 +1,23 @@
+.mainContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.topicContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.topic {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.ttt {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

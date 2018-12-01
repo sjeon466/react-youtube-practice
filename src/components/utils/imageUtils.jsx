@@ -1,7 +1,9 @@
 import React from "react";
 
 export function makeImgfromSrc(url, width = 40, height = 40) {
-  return <img src={url} alt="icon" style={{ width, height }} />;
+  return (
+    <img src={url} alt="icon" style={{ width, height, borderRadius: "50%" }} />
+  );
 }
 
 function createMarkup(svgSource) {
@@ -13,7 +15,7 @@ function createMarkup(svgSource) {
 export function makeImgFromSvg(svgSource, width = 40, height = 40) {
   return (
     <div
-      style={{ width: width, height: height, color: "red" }}
+      style={{ width: width, height: height }}
       dangerouslySetInnerHTML={createMarkup(svgSource)}
     />
   );

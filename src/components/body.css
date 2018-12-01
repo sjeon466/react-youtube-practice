@@ -11,11 +11,7 @@
 
 .sideBarContainer {
   min-width: 300px;
-  background: yellow;
   flex: 1;
-}
-
-.main {
 }
 
 .mainContainer {
