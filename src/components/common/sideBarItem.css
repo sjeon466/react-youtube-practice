@@ -12,3 +12,23 @@
 .categoryIcon {
   border-radius: 50%;
 }
+
+.sideBarButton {
+  background-color: rbga(0, 0, 0, 0);
+  box-sizing: "border-box";
+  color: "rgba(17, 17, 17, 0.4)";
+  display: "block";
+  font-family: "Roboto, Arial, sans-serif";
+  font-size: 0;
+  height: 40;
+  margin-bottom: 0;
+  margin-left: 0;
+  margin-right: 0;
+  margin-top: 0;
+  padding-bottom: 8;
+  padding-left: 8;
+  padding-right: 8;
+  padding-top: 8;
+  position: relative;
+  width: 40;
+}

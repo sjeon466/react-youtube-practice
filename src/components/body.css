@@ -14,6 +14,12 @@
   flex: 1;
   background: #eee;
   padding-top: 2px;
+  position: fixed;
+  top: 41px;
+  padding-top: 20px;
+}
+
+.sideBarContent {
 }
 
 .mainContainer {

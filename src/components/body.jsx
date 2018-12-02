@@ -10,7 +10,9 @@ class Body extends Component {
       <div className="outerBodyContainer">
         <div className="bodyContainer">
           <div className="sideBarContainer">
-            <SideBar className="sideBar" />
+            <div className="sideBarContent">
+              <SideBar className="sideBar" />
+            </div>
           </div>
           <div className="mainContainer">
             <Main className="main" />

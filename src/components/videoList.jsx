@@ -18,10 +18,23 @@ class VideoList extends Component {
               <div>{makeImgfromSrc(entry.videoUrl, 210, 121.5)}</div>
               <div className="videoTextContainer">
                 <p className="title">{entry.videoTitle}</p>
-                <p className="content">{entry.videoCreator}</p>
-                <p className="content">
-                  {entry.numViews} views · {entry.createdTime} ago{" "}
-                </p>
+                <div
+                  id="metadata"
+                  className="style-scope ytd-grid-video-renderer"
+                >
+                  <p className="creator">{entry.videoCreator}</p>
+                  <div
+                    id="metadata-line"
+                    className="style-scope ytd-grid-video-renderer"
+                  >
+                    <span className="style-scope ytd-grid-video-renderer">
+                      {entry.numViews} ·
+                    </span>
+                    <span className="style-scope ytd-grid-video-renderer">
+                      {entry.createdTime} ago
+                    </span>
+                  </div>
+                </div>
               </div>
             </div>
           ))}

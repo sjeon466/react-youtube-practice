@@ -1,5 +1,5 @@
 import { Component } from "react";
-import { makeButtonComponent } from "../utils/buttonUtils";
+import { makeButtonfromSvg } from "../utils/buttonUtils";
 
 class SearchButton extends Component {
   render() {
@@ -12,7 +12,7 @@ class SearchButton extends Component {
       color: "white",
       borderType: "dotted"
     };
-    return makeButtonComponent(button);
+    return makeButtonfromSvg(button);
   }
 }
 

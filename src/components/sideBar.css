@@ -15,3 +15,11 @@
 .text {
   color: black;
 }
+
+.svgButton {
+}
+
+.svgButton:hover {
+  background-color: black;
+  width: 60px;
+}

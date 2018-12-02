@@ -4,6 +4,7 @@ import {
   getCategoryItems
 } from "./../services/fakeSideBarServices";
 import SideBarItem from "./common/sideBarItem";
+import SvgButton from "./common/svgButton";
 
 class SideBar extends Component {
   state = {};
@@ -12,6 +13,7 @@ class SideBar extends Component {
     const categoryItems = getCategoryItems();
     return (
       <div className="sideBarContainer">
+        <SvgButton />
         <div>
           <SideBarItem className="text" items={basicItems} />
         </div>

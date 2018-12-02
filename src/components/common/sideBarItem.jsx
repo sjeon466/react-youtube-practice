@@ -7,7 +7,6 @@ class SideBarItem extends Component {
 
   render() {
     const { items } = this.props;
-    //console.log(items);
     return (
       <div className="list">
         {items.map(item => (
@@ -28,3 +27,15 @@ class SideBarItem extends Component {
 }
 
 export default SideBarItem;
+
+/* {
+  <div className="sideBarItem" key={item.text}>
+  {item.svg ? (
+    <div>{makeImgFromSvg(item.svg)}</div>
+  ) : (
+    <div>{makeImgfromSrc(item.imgUrl, undefined, undefined, true)}</div>
+  )}
+  <div className="text">{item.text}</div>
+</div>;
+
+} */
