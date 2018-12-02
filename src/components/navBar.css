@@ -12,8 +12,11 @@
   align-self: center;
 }
 
-.menuButton {
-  margin-right: 5px;
+.rightContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-self: center;
 }
 
 .searchContainer {
@@ -36,13 +39,6 @@
 .signIn {
   margin: 10px;
   white-space: nowrap;
-}
-
-.rightContainer {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-self: center;
 }
 
 .flex-center {
