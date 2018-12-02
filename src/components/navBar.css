@@ -4,6 +4,8 @@
   justify-content: center;
   align-self: center;
   padding: 0 16px;
+  top: 0px;
+  left: 0px;
 }
 
 .leftContainer {
@@ -25,7 +27,7 @@
   flex-direction: row;
   align-self: center;
   justify-content: center;
-  margin-left: 5px;
+  margin: 0 40px;
 }
 .searchBarWrapper {
   width: 100%;

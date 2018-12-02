@@ -8,6 +8,7 @@
   flex-direction: row;
   flex: 1;
 }
+
 .sideBarShadow {
   width: 240px;
 }
@@ -18,10 +19,7 @@
   padding-top: 2px;
   position: fixed;
   top: 41px;
-  padding-top: 20px;
-}
-
-.sideBarContent {
+  margin-top: 18px;
 }
 
 .mainContainer {

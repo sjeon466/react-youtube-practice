@@ -21,6 +21,7 @@ export function makeButtonfromSvg({
         display: "block",
         fontFamily: "Roboto, Arial, sans-serif",
         fontSize: 0,
+        fill: color,
         height: 40,
         marginBottom: 0,
         marginLeft: 0,

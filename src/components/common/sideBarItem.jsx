@@ -12,7 +12,9 @@ class SideBarItem extends Component {
         {items.map(item => (
           <div className="sideBarItem" key={item.text}>
             {item.svg ? (
-              <div>{makeImgFromSvg(item.svg)}</div>
+              <div className="sideBarButton">
+                {makeImgFromSvg(item.svg, 24, 24, "rgba(17 17 17 0.4)")}
+              </div>
             ) : (
               <div>
                 {makeImgfromSrc(item.imgUrl, undefined, undefined, true)}
