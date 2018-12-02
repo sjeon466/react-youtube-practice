@@ -8,11 +8,14 @@
   flex-direction: row;
   flex: 1;
 }
+.sideBarShadow {
+  flex: 0;
+  width: 240px;
+}
 
 .sideBarContainer {
-  min-width: 300px;
-  flex: 1;
-  background: #eee;
+  width: 240px;
+  background: rgb(245, 245, 245);
   padding-top: 2px;
   position: fixed;
   top: 41px;

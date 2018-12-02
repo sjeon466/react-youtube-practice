@@ -9,9 +9,11 @@ class Body extends Component {
     return (
       <div className="outerBodyContainer">
         <div className="bodyContainer">
-          <div className="sideBarContainer">
-            <div className="sideBarContent">
-              <SideBar className="sideBar" />
+          <div className="sideBarShadow">
+            <div className="sideBarContainer">
+              <div className="sideBarContent">
+                <SideBar className="sideBar" />
+              </div>
             </div>
           </div>
           <div className="mainContainer">
