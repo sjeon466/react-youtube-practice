@@ -1,9 +1,12 @@
 import React from "react";
+import "./signIn.css";
 
 const SignIn = () => {
   return (
     <div>
-      <a href="./">SIGN IN</a>
+      <a className="signIn" href="./">
+        SIGN IN
+      </a>
     </div>
   );
 };

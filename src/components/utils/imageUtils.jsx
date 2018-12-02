@@ -29,8 +29,6 @@ export function makeImgfromSrc(
 
 export function makeImgFromSvg(svgSource, width = 40, height = 40, linkUrl) {
   const markUp = createMarkup(svgSource);
-
-  console.log(linkUrl);
   if (linkUrl) {
     return (
       <a href={linkUrl}>

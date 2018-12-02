@@ -16,9 +16,8 @@ export function makeButtonfromSvg({
   return (
     <button
       style={{
-        backgroundColor: "rbga(0,0,0,0)",
         boxSizing: "border-box",
-        color: "rgba(17, 17, 17, 0.4)",
+        color: { color },
         display: "block",
         fontFamily: "Roboto, Arial, sans-serif",
         fontSize: 0,
