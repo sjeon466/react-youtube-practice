@@ -32,7 +32,6 @@ class SearchButton extends Component {
       borderTopWidth: "1px",
       boxSizing: "borderBox",
       color: "rgb(0, 0, 0)",
-      cursor: "pointer",
       display: "block",
       fontFamily: "Arial",
       fontSize: "13.3333px",

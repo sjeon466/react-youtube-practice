@@ -1,22 +1,23 @@
 import React, { Component } from "react";
 
-class MenuButton extends Component {
+class SideBarButton extends Component {
   render() {
     const svgSrc = `<svg viewBox="0 0 24 24" preserveAspectRatio="xMidYMid meet" focusable="false" class="style-scope yt-icon" style="pointer-events: none; display: block; width: 100%; height: 100%;"><g class="style-scope yt-icon">
-    <path style="fill:rgba(17,17,17,0.4);" d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z" class="style-scope yt-icon"></path>
+    <path d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8" class="style-scope yt-icon"></path>
   </g></svg>`;
     const style = {
       cursor: "pointer",
       background: "transparent",
       border: "none",
       boxSizing: "border-box",
+      color: "black",
       display: "block",
       fontFamily: "Roboto, Arial, sans-serif",
       fontSize: 0,
       height: 40,
       marginBottom: 0,
       marginLeft: 0,
-      marginRight: 16,
+      marginRight: 0,
       marginTop: 0,
       paddingBottom: 8,
       paddingLeft: 8,
@@ -27,7 +28,6 @@ class MenuButton extends Component {
     };
     return (
       <button
-        onClick={this.props.onClick}
         className="svgButton"
         style={style}
         dangerouslySetInnerHTML={{ __html: svgSrc }}
@@ -36,4 +36,4 @@ class MenuButton extends Component {
   }
 }
 
-export default MenuButton;
+export default SideBarButton;

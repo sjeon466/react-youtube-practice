@@ -4,6 +4,8 @@ import {
   getCategoryItems
 } from "./../services/fakeSideBarServices";
 import SideBarItem from "./common/sideBarItem";
+import SideBarButton from "./common/sideBarButton";
+import "./sideBar.css";
 
 class SideBar extends Component {
   state = {};
@@ -12,6 +14,15 @@ class SideBar extends Component {
     const categoryItems = getCategoryItems();
     return (
       <div className="sideBarContainer">
+        <div className="sideItemContainer">
+          <a id="sampleATag" href="./">
+            Watch Later
+          </a>
+        </div>
+        <div>
+          <SideBarButton />
+        </div>
+
         <div>
           <SideBarItem className="text" items={basicItems} />
         </div>

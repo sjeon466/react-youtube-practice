@@ -16,7 +16,10 @@ class NavBar extends Component {
       <div className="navBar">
         <div className="leftContainer">
           <div className="menuButton">
-            <MenuButton className="navbar__button" />
+            <MenuButton
+              className="navbar__button"
+              onClick={this.props.onMenuButtonClick}
+            />
           </div>
           <div className="logoWrapper flex-center">
             <Logo />

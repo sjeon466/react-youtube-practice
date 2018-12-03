@@ -22,6 +22,11 @@
   margin-top: 18px;
 }
 
+.sideBarShadow.close {
+  transform: translate(-100%);
+  transition: transform 0.2s ease-out;
+}
+
 .mainContainer {
   flex: 5;
   background: #fafafa;

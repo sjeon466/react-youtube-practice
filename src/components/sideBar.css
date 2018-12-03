@@ -1,15 +1,8 @@
-.hr {
-  border: 0;
-  height: 1px;
-  background-image: linear-gradient(
-    to right,
-    rgba(0, 0, 0, 0),
-    rgba(0, 0, 0, 0.75),
-    rgba(0, 0, 0, 0)
-  );
+.sideBarContainer {
 }
 
-.sideBarContainer {
+.sideItemContainer {
+  display: flex;
 }
 
 .text {
@@ -22,4 +15,29 @@
 .svgButton:hover {
   background-color: black;
   width: 60px;
+}
+
+#sampleATag {
+  flex: 1;
+  text-decoration: none;
+  font-size: 30px;
+  color: grey;
+  transition: transform 300ms ease-in-out;
+}
+
+#sampleATag:hover {
+  background: darkgrey;
+  position: 20px;
+  transform: translate(-240px, 0px);
+}
+
+.hr {
+  border: 0;
+  height: 1px;
+  background-image: linear-gradient(
+    to right,
+    rgba(0, 0, 0, 0),
+    rgba(0, 0, 0, 0.75),
+    rgba(0, 0, 0, 0)
+  );
 }
