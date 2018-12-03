@@ -23,17 +23,25 @@
 
 .searchContainer {
   display: flex;
-  flex: 1;
   flex-direction: row;
   align-self: center;
   justify-content: center;
   margin: 0 40px;
+
+  flex-basis: 1e-9px;
+  flex-grow: 1;
+  flex-shrink: 1;
+  font-family: "Roboto", Arial, sans-serif;
+  font-size: 10px;
+  height: 32px;
+  justify-content: flex-start;
+  max-width: none;
 }
-.searchBarWrapper {
-  width: 100%;
-  max-width: 550px;
-  padding-right: 3px;
+
+.logoWrapper {
+  margin-right: 30px;
 }
+
 .input {
   width: 100%;
 }

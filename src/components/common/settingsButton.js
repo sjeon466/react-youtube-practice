@@ -7,6 +7,7 @@ class SettingsButton extends Component {
             <path style="fill:rgba(17,17,17,0.4);" d="M12 8c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2zm0 2c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm0 6c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2z" class="style-scope yt-icon"></path>
           </g></svg>`;
     const style = {
+      cursor: "pointer",
       background: "transparent",
       border: "none",
       boxSizing: "border-box",

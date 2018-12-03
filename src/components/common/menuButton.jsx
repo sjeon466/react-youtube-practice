@@ -6,6 +6,7 @@ class MenuButton extends Component {
     <path style="fill:rgba(17,17,17,0.4);" d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z" class="style-scope yt-icon"></path>
   </g></svg>`;
     const style = {
+      cursor: "pointer",
       background: "transparent",
       border: "none",
       boxSizing: "border-box",

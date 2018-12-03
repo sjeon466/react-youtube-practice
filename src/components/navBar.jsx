@@ -1,7 +1,6 @@
 import React, { Component } from "react";
-import SearchBar from "./common/searchBar";
+import Search from "./common/search";
 import MenuButton from "./common/menuButton";
-import SearchButton from "./common/searchButton";
 import Logo from "./common/logo";
 import AppButton from "./common/appButton";
 import SettingsButton from "./common/settingsButton";
@@ -25,10 +24,7 @@ class NavBar extends Component {
         </div>
         <div className="searchContainer">
           <div className="searchBarWrapper">
-            <SearchBar className="input" />
-          </div>
-          <div className="flex-center">
-            <SearchButton className="navbar__button" />
+            <Search className="search" />
           </div>
         </div>
         <div className="rightContainer flex-center">
@@ -38,7 +34,6 @@ class NavBar extends Component {
           <div className="flex-center">
             <AppButton className="navbar__button" />
           </div>
-
           <div className="flex-center">
             <MessageButton className="navbar__button" />
           </div>
