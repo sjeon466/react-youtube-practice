@@ -3,32 +3,43 @@
 
 .sideItemContainer {
   display: flex;
+  flex-direction: row;
+  padding: 0px 24px;
 }
 
 .text {
   color: black;
 }
 
-.svgButton {
+.sidebarImg {
+  margin-right: 24px;
 }
 
-.svgButton:hover {
-  background-color: black;
-  width: 60px;
+.sidebarItemText {
+  margin-right: 24px;
+  flex-grow: 1;
+  flex-shrink: 1;
+  font-family: "Roboto", Arial, sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 21px;
 }
 
 #sampleATag {
+  display: flex;
   flex: 1;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
   text-decoration: none;
   font-size: 30px;
   color: grey;
-  transition: transform 300ms ease-in-out;
+  margin: 0;
+  padding: 0;
 }
 
 #sampleATag:hover {
   background: darkgrey;
-  position: 20px;
-  transform: translate(-240px, 0px);
 }
 
 .hr {

@@ -1,10 +1,10 @@
 import React, { Component } from "react";
+import SideBarItem from "./common/sideBarItem";
+import HomeImage from "./common/homeImage";
 import {
   getBasicItems,
   getCategoryItems
 } from "./../services/fakeSideBarServices";
-import SideBarItem from "./common/sideBarItem";
-import SideBarButton from "./common/sideBarButton";
 import "./sideBar.css";
 
 class SideBar extends Component {
@@ -16,13 +16,10 @@ class SideBar extends Component {
       <div className="sideBarContainer">
         <div className="sideItemContainer">
           <a id="sampleATag" href="./">
-            Watch Later
+            <HomeImage />
+            <h5 class="sidebarItemText">Watch Later</h5>
           </a>
         </div>
-        <div>
-          <SideBarButton />
-        </div>
-
         <div>
           <SideBarItem className="text" items={basicItems} />
         </div>
