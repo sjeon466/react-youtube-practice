@@ -1,25 +1,29 @@
 import React, { Component } from "react";
-import HomeImage from "./common/sidebar/homeImage";
 /* import {
   getBasicItems,
   getCategoryItems
 } from "./../services/fakeSideBarServices"; */
+
+import SideBarItem from "./common/sidebar/sideBarItem";
+import { getSideTopItems } from "./../services/fakeSideBarServices";
 import "./sideBar.css";
 
 class SideBar extends Component {
-  state = {};
   render() {
-    //const basicItems = getBasicItems();
+    //const sideTopItems = getSideTopItems();
     //const categoryItems = getCategoryItems();
+    const sideTopItems = getSideTopItems();
+    console.log(sideTopItems);
     return (
       <div className="sideBarContainer">
         <div className="sideBarTopContainer">
-          <div className="sideItemContainer">
-            <a className="sampleATag" href="./">
-              <HomeImage />
-              <h5 class="sidebarItemText">Watch Later</h5>
-            </a>
-          </div>
+          {sideTopItems.map(item => (
+            <SideBarItem
+              key={item.text}
+              svgSrc={item.svgTag}
+              text={item.text}
+            />
+          ))}
         </div>
       </div>
     );

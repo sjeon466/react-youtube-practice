@@ -1,16 +1,21 @@
 import React, { Component } from "react";
-import { makeImgfromSrc, makeImgFromSvg } from "./../utils/imageUtils";
+import SideTopImage from "./sideTopImage";
 import "./sideBarItem.css";
 
 class SideBarItem extends Component {
-  state = {};
-
   render() {
-    const { items } = this.props;
-    return <div className="list" />;
+    const { svgSrc, text } = this.props;
+
+    return (
+      <div className="sideItemContainer">
+        <a className="sampleATag" href="./">
+          <SideTopImage svgSrc={svgSrc} />
+          <h5 className="sidebarItemText">{text}</h5>
+        </a>
+      </div>
+    );
   }
 }
-
 export default SideBarItem;
 
 /* {

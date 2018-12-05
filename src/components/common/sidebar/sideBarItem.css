@@ -33,3 +33,20 @@
   position: relative;
   width: 40;
 }
+
+.sampleATag {
+  display: flex;
+  flex-direction: row;
+  flex: 1;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  font-size: 30px;
+  color: grey;
+  margin: 0;
+  padding: 0;
+}
+
+.sidebarItemText {
+  display: flex;
+}
