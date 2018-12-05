@@ -1,18 +1,18 @@
 .sideBarContainer {
+  display: flex;
+  flex-direction: column;
+}
+
+.sideBarTopContainer {
+  padding: 12px 0;
 }
 
 .sideItemContainer {
   display: flex;
   flex-direction: row;
   padding: 0px 24px;
-}
-
-.text {
-  color: black;
-}
-
-.sidebarImg {
-  margin-right: 24px;
+  height: 40px;
+  width: 240px;
 }
 
 .sidebarItemText {
@@ -25,12 +25,12 @@
   line-height: 21px;
 }
 
-#sampleATag {
+.sampleATag {
   display: flex;
+  flex-direction: row;
   flex: 1;
   align-items: center;
   justify-content: center;
-  flex-direction: row;
   text-decoration: none;
   font-size: 30px;
   color: grey;
@@ -38,7 +38,7 @@
   padding: 0;
 }
 
-#sampleATag:hover {
+.sampleATag:hover {
   background: darkgrey;
 }
 

@@ -1,8 +1,10 @@
-.signIn {
+.signInLink {
   color: rgb(6, 95, 212);
   font-size: 14px;
   font-weight: 500;
   text-decoration: none;
+  white-space: nowrap;
+  letter-spacing: 0.007px;
 }
 
 #signInContainer {

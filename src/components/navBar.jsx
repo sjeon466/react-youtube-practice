@@ -1,12 +1,12 @@
 import React, { Component } from "react";
-import Search from "./common/search";
-import MenuButton from "./common/menuButton";
-import Logo from "./common/logo";
-import AppButton from "./common/appButton";
-import SettingsButton from "./common/settingsButton";
-import SignIn from "./common/signIn";
-import RecordButton from "./common/recordButton";
-import MessageButton from "./common/messageButton";
+import Search from "./common/navbar/search";
+import MenuButton from "./common/navbar/menuButton";
+import Logo from "./common/navbar/logo";
+import AppButton from "./common/navbar/appButton";
+import SettingsButton from "./common/navbar/settingsButton";
+import SignIn from "./common/navbar/signIn";
+import RecordButton from "./common/navbar/recordButton";
+import MessageButton from "./common/navbar/messageButton";
 import "./navBar.css";
 
 class NavBar extends Component {
@@ -14,38 +14,31 @@ class NavBar extends Component {
   render() {
     return (
       <div className="navBar">
-        <div className="leftContainer">
-          <div className="menuButton">
-            <MenuButton
-              className="navbar__button"
-              onClick={this.props.onMenuButtonClick}
-            />
-          </div>
-          <div className="logoWrapper flex-center">
-            <Logo />
-          </div>
+        <div className="menuButton flex-center">
+          <MenuButton
+            className="navbar__button"
+            onClick={this.props.onMenuButtonClick}
+          />
         </div>
-        <div className="searchContainer">
-          <div className="searchBarWrapper">
-            <Search className="search" />
-          </div>
+        <div className="logoWrapper flex-center">
+          <Logo />
         </div>
+        <Search className="searchCl" />
         <div className="rightContainer flex-center">
-          <div className="flex-center">
+          <div className="flex-center buttonMarginRight">
             <RecordButton className="navbar__button" />
           </div>
-          <div className="flex-center">
+          <div className="flex-center buttonMarginRight">
             <AppButton className="navbar__button" />
           </div>
-          <div className="flex-center">
+          <div className="flex-center buttonMarginRight">
             <MessageButton className="navbar__button" />
           </div>
-          <div className="flex-center">
+          <div className="flex-center buttonMarginRight">
             <SettingsButton className="navbar__button" />
           </div>
-          <div className="signIn flex-center">
-            <SignIn />
-          </div>
+
+          <SignIn />
         </div>
       </div>
     );

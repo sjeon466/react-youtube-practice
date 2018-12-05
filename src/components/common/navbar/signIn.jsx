@@ -4,8 +4,8 @@ import "./signIn.css";
 const SignIn = () => {
   return (
     <div id="signInContainer">
-      <a className="signIn" href="./">
-        SIGN IN
+      <a className="signInLink" href="./">
+        로그인
       </a>
     </div>
   );
