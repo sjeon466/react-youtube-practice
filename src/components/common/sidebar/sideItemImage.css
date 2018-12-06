@@ -1,0 +1,24 @@
+.sideItemImage__img {
+  margin-right: 24px;
+  height: 24px;
+  width: 24px;
+  width: 24px;
+  display: flex;
+  align-items: center;
+  color: rgb(17, 17, 17);
+  background: "transparent";
+}
+
+.sideItemImage__svg {
+  margin-right: 24px;
+  height: 24px;
+  width: 24px;
+  display: flex;
+  align-items: center;
+  color: hsl(0, 0%, 53.3%);
+  background: "transparent";
+}
+
+.sideItem__round {
+  border-radius: 50%;
+}

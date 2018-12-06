@@ -1,0 +1,10 @@
+.sideBar__HeaderContainer {
+  widows: 240px;
+  height: 56px;
+  padding-left: 16px;
+  display: flex;
+  align-items: center;
+}
+
+.sideBar__Header_alignCenter {
+}

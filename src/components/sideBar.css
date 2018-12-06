@@ -1,12 +1,13 @@
 .sideBarContainer {
-  display: flex;
+  position: fixed;
+  flex: 1;
   flex-direction: column;
   background-color: #fafafa;
 }
 
 .sideBarTopContainer {
-  padding: 12px 0;
-  border-bottom: 1px solid rgba(0, 0, 0, 0, 1);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  padding: 12px 0px;
 }
 
 .sideItemContainer {
@@ -27,22 +28,62 @@
   flex-shrink: 1;
   font-family: "Roboto", Arial, sans-serif;
   font-size: 14px;
-  font-weight: 500;
+  font-weight: 400;
   line-height: 21px;
 }
 
-.hr {
-  border: 0;
-  height: 1px;
-  background-image: linear-gradient(
-    to right,
-    rgba(0, 0, 0, 0),
-    rgba(0, 0, 0, 0.75),
-    rgba(0, 0, 0, 0)
-  );
+.sideBarCategoryContainer {
+  padding: 8px 0px;
+}
+.sideBarCategoryText {
+  font-family: "Roboto", Arial, sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  padding: 8px 24px;
+  color: rgb(96, 96, 96);
 }
 
-.sideTopImg {
-  width: 24px;
-  height: 24px;
+.containerBottomBorder {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.sideBar__LogInContainer {
+  padding: 16px 32px;
+  display: flex;
+  flex-direction: column;
+  height: 114px;
+  width: 240px;
+}
+
+.sideBar__signInInstruct {
+  font-size: 14px;
+  font-family: "Roboto", Arial, sans-serif;
+  font-weight: 400;
+  display: block;
+}
+
+.sideBar__signInLink {
+  padding: 10px 16px 10px -16px;
+  display: inline-block;
+  width: 73.04px;
+}
+
+.sideBar__signInText {
+  text-decoration: none;
+  font-family: "Roboto", Arial, sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+  display: inline-block;
+}
+
+.sideBar__YoutubeMoreContainer {
+  height: 132px;
+  padding: 8px 0px;
+}
+
+.sideBar__SettingsContainer {
+  height: 176px;
+  width: 240px;
+  padding: 8px 0px;
 }
