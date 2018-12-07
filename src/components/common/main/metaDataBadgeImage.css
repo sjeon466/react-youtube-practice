@@ -1,0 +1,10 @@
+.metaDataBadgeImage {
+  margin-right: 8px;
+  padding-left: 4px;
+  height: 13px;
+  width: 17px;
+  display: flex;
+  align-items: center;
+  fill: rgba(17, 17, 17, 0.4);
+  background: rgba(0, 0, 0, 0);
+}

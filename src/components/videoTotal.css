@@ -1,0 +1,124 @@
+.videoTotal__videoTotalContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  max-width: 1284px;
+  height: 297px;
+  overflow: hidden;
+  border-bottom: 0.6px solid rgba(0, 0, 0, 0.1);
+}
+
+.videoTotal__twoRow {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  height: 589px;
+  overflow: hidden;
+  max-width: 1284px;
+}
+
+.videoTotal__videoListSubHeader {
+  display: flex;
+  align-items: center;
+  margin-top: 24px;
+  height: 20px;
+  max-width: 1284;
+}
+
+.videoTotal__topicTitle {
+  font-family: "Roboto", Arial, sans-serif;
+  color: rgb(10, 10, 10);
+  max-height: 20px;
+  overflow: hidden;
+  font-size: 16px;
+  font-weight: 500px;
+  line-height: 20px;
+}
+.videoTotal__topicDetail {
+}
+.videoTotal__videoListContainer {
+  margin-top: 24px;
+  display: flex;
+  flex-direction: row;
+  max-width: 1284;
+  flex-wrap: wrap;
+  height: 229px;
+}
+
+.videoTotal__videoEntryOuterContainer {
+  margin-bottom: 24px;
+  margin-right: 4px;
+}
+
+.videoTotal__videoEntryInnerContainer {
+  position: relative;
+}
+
+.videoTotal__videoEntryInnerContainer:hover > .main__watchLaterButton {
+  background-color: rgb(17, 17, 17);
+}
+
+.videoTotal__videoEntryInnerContainer:hover > .main__watchLaterButton > svg {
+  opacity: 0.6;
+}
+
+.videoTotal__thumbNail {
+}
+
+.videoTotal__videoEntryTextContainer {
+  width: 210px;
+  height: 84px;
+  padding-right: 24px;
+}
+
+.videoTotal__videoEntryTextTitle {
+  font-family: "Roboto", Arial, sans-serif;
+  font-size: 14px;
+  line-height: 16px;
+  font-weight: 500;
+  color: rgb(17, 17, 17);
+  text-decoration: none;
+}
+
+.videoTotal__videoEntryTextTitleWrapper {
+  margin: 8px 0px;
+}
+
+.videoTotal__videoEntryTextMetadataContainer {
+}
+
+.videoTotal__videoEntryTextByLineContainer {
+  display: flex;
+  flex-direction: row;
+  line-height: 18px;
+  max-height: 18px;
+  align-items: center;
+}
+
+.videoTotal__videoEntryTextByLineText {
+  text-decoration: none;
+  font-family: "Roboto", Arial, sans-serif;
+  font-size: 13px;
+  font-weight: 400;
+  color: rgba(17, 17, 17, 0.6);
+}
+
+.videoTotal__EntryTextBadge {
+  margin-right: 8px;
+  padding-left: 4px;
+  margin-bottom: 1px;
+}
+
+.videoTotal__videoEntryTextMetadataLineLink {
+  font-family: "Roboto", Arial, sans-serif;
+  font-size: 13px;
+  font-weight: 400;
+  font-weight: 400;
+  color: rgba(17, 17, 17, 0.6);
+  text-decoration: none;
+}
+
+.videoTotal_dot {
+  margin: 0 4px;
+  color: rgba(17, 17, 17, 0.6);
+}

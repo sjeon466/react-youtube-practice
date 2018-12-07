@@ -7,15 +7,18 @@ class Body extends Component {
   state = {};
   render() {
     let shadowBarClasses = "sideBarShadow";
+    let sideBarClasses = "sideBar";
     if (!this.props.isSideDrawerOpen) {
       shadowBarClasses = "sideBarShadow close";
+      sideBarClasses = "side__Bar close";
     }
 
     return (
       <div className="outerBodyContainer">
         <div className="bodyContainer">
-          <div className={shadowBarClasses} />
-          <SideBar className="sideBar" />
+          <div className={shadowBarClasses}>
+            <SideBar className={sideBarClasses} />
+          </div>
           <div className="mainContainer">
             <Main className="main" />
           </div>

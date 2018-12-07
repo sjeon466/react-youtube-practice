@@ -3,7 +3,7 @@ import ReactDOM from "react-dom";
 import "./index.css";
 import App from "./App";
 import * as serviceWorker from "./serviceWorker";
-
+import PracticeForm from "./components/PracticeForm";
 ReactDOM.render(<App />, document.getElementById("root"));
 //ReactDOM.render(<PracticeForm />, document.getElementById("root"));
 

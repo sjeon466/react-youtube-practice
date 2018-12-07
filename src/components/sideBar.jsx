@@ -10,7 +10,6 @@ import {
 } from "./../services/fakeSideBarServices";
 import "./sideBar.css";
 import SideBarFooter from "./sideBarFooter";
-import SideBarHeader from "./sideBarHeader";
 
 class SideBar extends Component {
   render() {
@@ -23,7 +22,6 @@ class SideBar extends Component {
     const settingsItems = getSettingsItems();
     return (
       <div className="sideBarContainer">
-        <SideBarHeader />
         <div className="sideBarTopContainer">
           {topItems.map(item => (
             <SideBarItem

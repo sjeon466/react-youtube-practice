@@ -1,7 +1,7 @@
-.mainContainer {
-  justify-content: center;
-}
-
-.topicContainer {
+.main__mainContainer {
   display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  background: hsla(0, 0%, 98%, 1);
 }

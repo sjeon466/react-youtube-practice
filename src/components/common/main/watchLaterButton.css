@@ -1,0 +1,18 @@
+.main__watchLaterButton {
+  position: absolute;
+  top: 7px;
+  right: 7px;
+  height: 24px;
+  width: 24px;
+  display: flex;
+  border: none;
+  background-color: transparent;
+  padding: 1px 1px;
+}
+
+.main__watchLaterButton > svg {
+  fill: hsl(0 0% 100%);
+  opacity: 0;
+  width: 24px;
+  height: 24px;
+}

@@ -10,18 +10,19 @@
 }
 
 .sideBarShadow {
-  width: 240px;
+  width: 260px;
   background: hsla(0, 0%, 98%, 1);
 }
 
-.sideBarShadow.close {
-  transform: translate(-100%);
-  transition: transform 0.2s ease-out;
-}
-
-.sideBar {
+.side__Bar {
   display: flex;
   flex-direction: column;
+}
+
+.close {
+  display: none;
+  transform: translate(-100%);
+  transition: transform 0.05s ease-out;
 }
 
 .mainContainer {

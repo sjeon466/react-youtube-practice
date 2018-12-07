@@ -1,8 +1,9 @@
 .sideBarContainer {
   position: fixed;
-  flex: 1;
-  flex-direction: column;
   background-color: #fafafa;
+  overflow: auto;
+  height: 100%;
+  margin-top: 57px;
 }
 
 .sideBarTopContainer {
