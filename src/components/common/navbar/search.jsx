@@ -5,7 +5,7 @@ class searchBar extends Component {
   state = {};
   render() {
     return (
-      <div className="navbar__searchOuterContainer">
+      <div className={"navbar__searchOuterContainer " + this.props.className}>
         <div className="navbar__searchContainer">
           <div className="navbar__searchFieldContainer">
             <input className="navbar__input" type="text" placeholder="검색" />

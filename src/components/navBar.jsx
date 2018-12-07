@@ -14,16 +14,18 @@ class NavBar extends Component {
   render() {
     return (
       <div className="navBar">
-        <div className="menuButton flex-center">
-          <MenuButton
-            className="navbar__button"
-            onClick={this.props.onMenuButtonClick}
-          />
+        <div className="navBar__leftContainer">
+          <div className="menuButton flex-center">
+            <MenuButton
+              className="navbar__button"
+              onClick={this.props.onMenuButtonClick}
+            />
+          </div>
+          <div className="logoWrapper flex-center">
+            <Logo className="navBar__logo" />
+          </div>
         </div>
-        <div className="logoWrapper flex-center">
-          <Logo />
-        </div>
-        <Search className="searchCl" />
+        <Search className="navBar__searchCl" />
         <div className="rightContainer flex-center">
           <div className="flex-center buttonMarginRight">
             <RecordButton className="navbar__button" />

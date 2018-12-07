@@ -48,18 +48,22 @@
   padding-right: 16px;
   padding-top: 0px;
 }
-
-.rightContainer {
+.navBar__leftContainer {
   display: flex;
   flex-direction: row;
   justify-content: flex-end;
   align-self: center;
+}
+
+.rightContainer {
+  display: flex;
+
   height: 40px;
   width: 266px;
 }
 
 .logoWrapper {
-  width: 129px;
+  padding-right: 49px;
 }
 
 .input {
@@ -82,4 +86,13 @@
 
 .buttonMarginRight {
   margin-right: 8px;
+}
+
+@media screen and (max-width: 660px) {
+  .navBar__searchCl {
+    display: none;
+  }
+  .logoWrapper {
+    padding-right: 3px;
+  }
 }
