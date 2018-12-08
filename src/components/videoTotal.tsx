@@ -1,12 +1,28 @@
-import React, { Component } from "react";
-//import { getEntries } from "./../services/fakeTopicServices";
 import "./videoTotal.css";
+
+import * as React from "react";
+
+import { IVideo } from "../services/fakeTopicServices";
+import MetaDataBadgeImage from "./common/main/metaDAtaBadgeImage";
 import ThumbNailImage from "./common/main/thumbNailImage";
-import WatchLaterButton from "./common/main/watchLaterButton";
 import VideoTimeText from "./common/main/videoTimeText";
-import MetaDataBadgeImage from "./common/main/metaDataBadgeImage";
-class VideoTotal extends Component {
-  render() {
+import WatchLaterButton from "./common/main/watchLaterButton";
+
+// import { getEntries } from "./../services/fakeTopicServices";
+
+/*
+  key={topic.title}
+  videoEntries={topic.videos}
+  currentTopic={topic.title}
+*/
+
+interface IProps {
+  videoEntries: IVideo[];
+  currentTopic: string;
+}
+
+class VideoTotal extends React.Component<IProps, {}> {
+  public render() {
     const { videoEntries, currentTopic } = this.props;
     return (
       <div className="videoTotal__videoTotalContainer">

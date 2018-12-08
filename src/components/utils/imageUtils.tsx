@@ -1,19 +1,22 @@
-import React from "react";
+import * as React from "react";
 
-function createMarkup(svgSource) {
+function createMarkup(svgSource: React.ReactNode) {
   return {
     __html: `${svgSource}`
   };
 }
 
 export function makeImgfromSrc(
-  url,
-  width = 40,
-  height = 40,
-  isCategoryIcon,
-  linkUrl
+  url: string,
+  width: number = 40,
+  height: number = 40,
+  isCategoryIcon: boolean,
+  linkUrl: string
 ) {
-  let style = { width, height };
+  let style: { width: number; height: number; borderRadius?: string } = {
+    width,
+    height
+  };
   if (isCategoryIcon) {
     style = { ...style, borderRadius: "50%" };
   }
@@ -27,7 +30,12 @@ export function makeImgfromSrc(
   return <img src={url} alt="icon" style={style} />;
 }
 
-export function makeImgFromSvg(svgSource, width = 40, height = 40, linkUrl) {
+export function makeImgFromSvg(
+  svgSource: React.ReactNode,
+  width: number = 40,
+  height: number = 40,
+  linkUrl: string
+) {
   const markUp = createMarkup(svgSource);
   if (linkUrl) {
     return (
@@ -38,7 +46,7 @@ export function makeImgFromSvg(svgSource, width = 40, height = 40, linkUrl) {
   } else {
     return (
       <div
-        style={{ width: width, height: height }}
+        style={{ width, height }}
         dangerouslySetInnerHTML={createMarkup(svgSource)}
       />
     );

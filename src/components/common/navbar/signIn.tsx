@@ -1,5 +1,9 @@
-import React from "react";
+import * as React from "react";
 import "./signIn.css";
+
+export interface IProps {
+  className: string;
+}
 
 const SignIn = () => {
   return (

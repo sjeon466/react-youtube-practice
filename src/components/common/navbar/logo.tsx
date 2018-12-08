@@ -1,4 +1,5 @@
-import { makeImgFromSvg } from "./../../utils/imageUtils";
+import { makeImgFromSvg } from "../../utils/imageUtils";
+
 const Logo = () => {
   return makeImgFromSvg(
     `<svg viewBox="0 0 200 60" preserveAspectRatio="xMidYMid meet" focusable="false" class="style-scope ytd-topbar-logo-renderer" style="pointer-events: none; display: block; width: 100%; height: 100%;"><g viewBox="0 0 200 60" preserveAspectRatio="xMidYMid meet" class="style-scope ytd-topbar-logo-renderer">

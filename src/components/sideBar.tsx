@@ -1,20 +1,24 @@
-import React, { Component } from "react";
+import "./sideBar.css";
 
-import SideBarItem from "./common/sidebar/sideBarItem";
+import * as React from "react";
 import {
-  getSideTopItems,
   getCategoryItems,
   getChannelSearchItem,
-  getYoutubeMoreItems,
-  getSettingsItems
+  getSettingsItems,
+  getSideTopItems,
+  getYoutubeMoreItems
 } from "./../services/fakeSideBarServices";
-import "./sideBar.css";
+import SideBarItem from "./common/sidebar/sideBarItem";
 import SideBarFooter from "./sideBarFooter";
 
-class SideBar extends Component {
-  render() {
-    //const sideTopItems = getSideTopItems();
-    //const categoryItems = getCategoryItems();
+export interface IProps {
+  className: string;
+}
+
+class SideBar extends React.Component<IProps, {}> {
+  public render() {
+    // const sideTopItems = getSideTopItems();
+    // const categoryItems = getCategoryItems();
     const topItems = getSideTopItems();
     const categoryItems = getCategoryItems();
     const channelSearchItem = getChannelSearchItem();

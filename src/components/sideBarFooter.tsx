@@ -1,8 +1,7 @@
-import React, { Component } from "react";
+import * as React from "react";
 import "./sideBarFooter.css";
-class SideBarFooter extends Component {
-  state = {};
-  render() {
+class SideBarFooter extends React.Component<{}, {}> {
+  public render() {
     return (
       <div className="footerContainer">
         <div className="footer__guideLinkPrimaryContainer">

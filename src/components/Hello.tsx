@@ -1,13 +1,12 @@
 // src/components/Hello.tsx
-
 import * as React from "react";
 
-export interface Props {
+export interface IProps {
   name: string;
   enthusiasmLevel?: number;
 }
 
-function Hello({ name, enthusiasmLevel = 1 }: Props) {
+function Hello({ name, enthusiasmLevel = 1 }: IProps) {
   if (enthusiasmLevel <= 0) {
     throw new Error("You could be a little more enthusiastic. :D");
   }

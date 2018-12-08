@@ -1,4 +1,25 @@
-export function getTopics() {
+export interface ITopic {
+  title: string;
+  videos: Array<{
+    id: number;
+    videoUrl: string;
+    videoTitle: string;
+    videoCreator: string;
+    numViews: string;
+    createdTime: string;
+  }>;
+}
+
+export interface IVideo {
+  id: number;
+  videoUrl: string;
+  videoTitle: string;
+  videoCreator: string;
+  numViews: string;
+  createdTime: string;
+}
+
+export function getTopics(): ITopic[] {
   return [
     {
       title: "Recommended",

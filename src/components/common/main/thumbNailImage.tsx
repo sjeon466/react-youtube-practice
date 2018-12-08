@@ -1,8 +1,13 @@
-import React, { Component } from "react";
+import * as React from "react";
 import "./thumbNailImage.css";
 
-class ThumbNailImage extends Component {
-  render() {
+interface IProps {
+  src: string;
+  className: string;
+}
+
+class ThumbNailImage extends React.Component<IProps, {}> {
+  public render() {
     const { src } = this.props;
     return (
       <img

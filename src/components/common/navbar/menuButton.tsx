@@ -1,23 +1,26 @@
-import React, { Component } from "react";
+import * as React from "react";
+export interface IProps {
+  className: string;
+  onClick(): void;
+}
 
-class SideBarButton extends Component {
-  render() {
+class MenuButton extends React.Component<IProps, {}> {
+  public render() {
     const svgSrc = `<svg viewBox="0 0 24 24" preserveAspectRatio="xMidYMid meet" focusable="false" class="style-scope yt-icon" style="pointer-events: none; display: block; width: 100%; height: 100%;"><g class="style-scope yt-icon">
-    <path d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8" class="style-scope yt-icon"></path>
+    <path style="fill:rgba(17,17,17,0.4);" d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z" class="style-scope yt-icon"></path>
   </g></svg>`;
     const style = {
-      cursor: "pointer",
       background: "transparent",
       border: "none",
       boxSizing: "border-box",
-      color: "black",
+      cursor: "pointer",
       display: "block",
       fontFamily: "Roboto, Arial, sans-serif",
       fontSize: 0,
       height: 40,
       marginBottom: 0,
       marginLeft: 0,
-      marginRight: 0,
+      marginRight: 16,
       marginTop: 0,
       paddingBottom: 8,
       paddingLeft: 8,
@@ -25,9 +28,10 @@ class SideBarButton extends Component {
       paddingTop: 8,
       position: "relative",
       width: 40
-    };
+    } as React.CSSProperties;
     return (
       <button
+        onClick={this.props.onClick}
         className="svgButton"
         style={style}
         dangerouslySetInnerHTML={{ __html: svgSrc }}
@@ -36,4 +40,4 @@ class SideBarButton extends Component {
   }
 }
 
-export default SideBarButton;
+export default MenuButton;

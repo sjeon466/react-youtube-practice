@@ -1,11 +1,14 @@
-import React, { Component } from "react";
-import SideBar from "./sideBar";
-import Main from "./main";
+import * as React from "react";
 import "./body.css";
+import Main from "./main";
+import SideBar from "./sideBar";
 
-class Body extends Component {
-  state = {};
-  render() {
+export interface IProps {
+  isSideDrawerOpen: boolean;
+}
+
+class Body extends React.Component<IProps> {
+  public render() {
     let shadowBarClasses = "sideBarShadow";
     let sideBarClasses = "sideBar";
     if (!this.props.isSideDrawerOpen) {

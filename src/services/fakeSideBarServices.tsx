@@ -1,6 +1,13 @@
-import React from "react";
+import * as React from "react";
 
-export function getSideTopItems() {
+export interface IItem {
+  text: string;
+  src: JSX.Element;
+  isSvg: boolean;
+  isRound: boolean;
+}
+
+export function getSideTopItems(): IItem[] {
   return [
     {
       text: "홈",

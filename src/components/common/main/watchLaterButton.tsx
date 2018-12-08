@@ -1,7 +1,12 @@
-import React, { Component } from "react";
+import * as React from "react";
 import "./watchLaterButton.css";
-class WatchLaterButton extends Component {
-  render() {
+
+interface IProps {
+  className: string;
+}
+
+class WatchLaterButton extends React.Component<IProps, {}> {
+  public render() {
     return (
       <button className="main__watchLaterButton">
         <svg

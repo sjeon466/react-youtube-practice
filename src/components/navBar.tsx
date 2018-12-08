@@ -1,17 +1,22 @@
-import React, { Component } from "react";
-import Search from "./common/navbar/search";
-import MenuButton from "./common/navbar/menuButton";
-import Logo from "./common/navbar/logo";
-import AppButton from "./common/navbar/appButton";
-import SettingsButton from "./common/navbar/settingsButton";
-import SignIn from "./common/navbar/signIn";
-import RecordButton from "./common/navbar/recordButton";
-import MessageButton from "./common/navbar/messageButton";
 import "./navBar.css";
 
-class NavBar extends Component {
-  state = {};
-  render() {
+import * as React from "react";
+
+import AppButton from "./common/navbar/appButton";
+import Logo from "./common/navbar/logo";
+import MenuButton from "./common/navbar/menuButton";
+import MessageButton from "./common/navbar/messageButton";
+import RecordButton from "./common/navbar/recordButton";
+import Search from "./common/navbar/search";
+import SettingsButton from "./common/navbar/settingsButton";
+import SignIn from "./common/navbar/signIn";
+
+export interface IProps {
+  onMenuButtonClick(): void;
+}
+
+export default class NavBar extends React.Component<IProps> {
+  public render() {
     return (
       <div className="navBar">
         <div className="navBar__leftContainer">
@@ -22,7 +27,7 @@ class NavBar extends Component {
             />
           </div>
           <div className="logoWrapper flex-center">
-            <Logo className="navBar__logo" />
+            <Logo />
           </div>
         </div>
         <Search className="navBar__searchCl" />
@@ -46,5 +51,3 @@ class NavBar extends Component {
     );
   }
 }
-
-export default NavBar;
