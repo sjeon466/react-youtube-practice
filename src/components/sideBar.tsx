@@ -1,22 +1,22 @@
-import "./sideBar.css";
+import './sideBar.css';
 
-import * as React from "react";
+import * as React from 'react';
 import {
   getCategoryItems,
   getChannelSearchItem,
   getSettingsItems,
   getSideTopItems,
-  getYoutubeMoreItems
-} from "./../services/fakeSideBarServices";
-import SideBarItem from "./common/sidebar/sideBarItem";
-import SideBarFooter from "./sideBarFooter";
+  getYoutubeMoreItems,
+} from './../services/fakeSideBarServices';
+import SideBarItem from './common/sidebar/sideBarItem';
+import SideBarFooter from './sideBarFooter';
 
 export interface IProps {
   className: string;
 }
 
 class SideBar extends React.Component<IProps, {}> {
-  public render() {
+  public render(): JSX.Element {
     // const sideTopItems = getSideTopItems();
     // const categoryItems = getCategoryItems();
     const topItems = getSideTopItems();
@@ -27,7 +27,7 @@ class SideBar extends React.Component<IProps, {}> {
     return (
       <div className="sideBarContainer">
         <div className="sideBarTopContainer">
-          {topItems.map(item => (
+          {topItems.map((item) => (
             <SideBarItem
               key={item.text}
               src={item.src}
@@ -39,7 +39,7 @@ class SideBar extends React.Component<IProps, {}> {
         </div>
         <div className="sideBarCategoryContainer containerBottomBorder">
           <div className="sideBarCategoryText">인기 YOUTUBE</div>
-          {categoryItems.map(item => (
+          {categoryItems.map((item) => (
             <SideBarItem
               key={item.text}
               src={item.src}
@@ -68,7 +68,7 @@ class SideBar extends React.Component<IProps, {}> {
         </div>
         <div className="sideBar__YoutubeMoreContainer containerBottomBorder">
           <div className="sideBarCategoryText">YOUTUBE 더보기</div>
-          {youtubeMoreItems.map(item => (
+          {youtubeMoreItems.map((item) => (
             <SideBarItem
               key={item.text}
               src={item.src}
@@ -79,7 +79,7 @@ class SideBar extends React.Component<IProps, {}> {
           ))}
         </div>
         <div className="sideBar__SettingsContainer containerBottomBorder">
-          {settingsItems.map(item => (
+          {settingsItems.map((item) => (
             <SideBarItem
               key={item.text}
               src={item.src}

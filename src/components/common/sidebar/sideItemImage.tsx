@@ -1,5 +1,5 @@
-import * as React from "react";
-import "./sideItemImage.css";
+import * as React from 'react';
+import './sideItemImage.css';
 
 export interface IProps {
   src: React.ReactNode;
@@ -8,11 +8,11 @@ export interface IProps {
 }
 
 class SideItemImage extends React.Component<IProps, {}> {
-  public render() {
+  public render(): JSX.Element {
     const { src, isRound, isSvg } = this.props;
-    let classes = "sideItemImage__";
-    classes = isSvg ? classes + "svg" : classes + "img";
-    classes = isRound ? classes + " sideItem__round" : classes;
+    let classes = 'sideItemImage__';
+    classes = isSvg ? `${classes}svg` : `${classes}img`;
+    classes = isRound ? `${classes} sideItem__round` : classes;
     return isSvg ? (
       <div className={classes}>{src}</div>
     ) : (

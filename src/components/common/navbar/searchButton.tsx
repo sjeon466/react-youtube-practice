@@ -1,11 +1,11 @@
-import * as React from "react";
-import "./searchButton.css";
+import * as React from 'react';
+import './searchButton.css';
 export interface IProps {
   className: string;
 }
 
 class SearchButton extends React.Component<IProps, {}> {
-  public render() {
+  public render(): JSX.Element {
     return (
       <button className="navbar__searchButton">
         <svg

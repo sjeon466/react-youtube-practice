@@ -1,19 +1,19 @@
-import * as React from "react";
-import "./body.css";
-import Main from "./main";
-import SideBar from "./sideBar";
+import * as React from 'react';
+import './body.css';
+import Main from './main';
+import SideBar from './sideBar';
 
 export interface IProps {
   isSideDrawerOpen: boolean;
 }
 
 class Body extends React.Component<IProps> {
-  public render() {
-    let shadowBarClasses = "sideBarShadow";
-    let sideBarClasses = "sideBar";
+  public render(): JSX.Element {
+    let shadowBarClasses = 'sideBarShadow';
+    let sideBarClasses = 'sideBar';
     if (!this.props.isSideDrawerOpen) {
-      shadowBarClasses = "sideBarShadow close";
-      sideBarClasses = "side__Bar close";
+      shadowBarClasses = 'sideBarShadow close';
+      sideBarClasses = 'side__Bar close';
     }
 
     return (
@@ -22,6 +22,7 @@ class Body extends React.Component<IProps> {
           <div className={shadowBarClasses}>
             <SideBar className={sideBarClasses} />
           </div>
+          \
           <div className="mainContainer">
             <Main className="main" />
           </div>

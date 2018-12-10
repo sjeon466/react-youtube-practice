@@ -1,22 +1,22 @@
-import "./navBar.css";
+import './navBar.css';
 
-import * as React from "react";
+import * as React from 'react';
 
-import AppButton from "./common/navbar/appButton";
-import Logo from "./common/navbar/logo";
-import MenuButton from "./common/navbar/menuButton";
-import MessageButton from "./common/navbar/messageButton";
-import RecordButton from "./common/navbar/recordButton";
-import Search from "./common/navbar/search";
-import SettingsButton from "./common/navbar/settingsButton";
-import SignIn from "./common/navbar/signIn";
+import AppButton from './common/navbar/appButton';
+import Logo from './common/navbar/logo';
+import MenuButton from './common/navbar/menuButton';
+import MessageButton from './common/navbar/messageButton';
+import RecordButton from './common/navbar/recordButton';
+import Search from './common/navbar/search';
+import SettingsButton from './common/navbar/settingsButton';
+import SignIn from './common/navbar/signIn';
 
 export interface IProps {
   onMenuButtonClick(): void;
 }
 
 export default class NavBar extends React.Component<IProps> {
-  public render() {
+  public render(): JSX.Element {
     return (
       <div className="navBar">
         <div className="navBar__leftContainer">

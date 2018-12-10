@@ -1,4 +1,4 @@
-import * as React from "react";
+import * as React from 'react';
 
 export interface IItem {
   text: string;
@@ -7,10 +7,17 @@ export interface IItem {
   isRound: boolean;
 }
 
+export interface IImgItem {
+  text: string;
+  src: string;
+  isSvg: boolean;
+  isRound: boolean;
+}
+
 export function getSideTopItems(): IItem[] {
   return [
     {
-      text: "홈",
+      text: '홈',
       src: (
         <svg
           className="img"
@@ -26,10 +33,10 @@ export function getSideTopItems(): IItem[] {
         </svg>
       ),
       isSvg: true,
-      isRound: false
+      isRound: false,
     },
     {
-      text: "인기",
+      text: '인기',
       src: (
         <svg
           viewBox="0 0 24 24"
@@ -44,11 +51,11 @@ export function getSideTopItems(): IItem[] {
         </svg>
       ),
       isSvg: true,
-      isRound: false
+      isRound: false,
     },
 
     {
-      text: "최근 본 동영상",
+      text: '최근 본 동영상',
       src: (
         <svg
           viewBox="0 0 24 24"
@@ -63,83 +70,93 @@ export function getSideTopItems(): IItem[] {
         </svg>
       ),
       isSvg: true,
-      isRound: false
-    }
+      isRound: false,
+    },
   ];
 }
 
-export function getCategoryItems() {
+export function getCategoryItems(): IImgItem[] {
   return [
     {
-      text: "음악",
-      src: `//yt3.ggpht.com/FDaq8KXRu4K5nDsDY9jaCMLYmZjtHaKJn46pbYa4RDpP8HNhIJqTsgX0pdDwew7cqmeiW8Dh-6S_RmZmnzA=s88-nd-c-c0xffffffff-rj-k-no`,
+      text: '음악',
+      src:
+        '//yt3.ggpht.com/FDaq8KXRu4K5nDsDY9jaCMLYmZjtHaKJn46pbYa4RDpP8HNhIJqTsgX0pdDwew7cqmeiW8Dh-6S_RmZmnzA=s88-nd-c-c0xffffffff-rj-k-no',
       isSvg: false,
-      isRound: true
+      isRound: true,
     },
     {
-      text: "스포츠",
-      src: `//yt3.ggpht.com/ed8j2kBpT2lZ733MVAQOEUz2HWoaIjdDttATKCXnVlfgzQYiJMXZXZDoimlRXlnqckytenB7cTR2r72nCQ=s88-nd-c-c0xffffffff-rj-k-no`,
+      text: '스포츠',
+      src:
+        '//yt3.ggpht.com/ed8j2kBpT2lZ733MVAQOEUz2HWoaIjdDttATKCXnVlfgzQYiJMXZXZDoimlRXlnqckytenB7cTR2r72nCQ=s88-nd-c-c0xffffffff-rj-k-no',
       isSvg: false,
-      isRound: true
+      isRound: true,
     },
     {
-      text: "게임",
-      src: `//yt3.ggpht.com/Ww5_zdMhr5NBl3S8oF_Bh5udD-mSL-OlK6TDXbMRZIA0-HRWSmCDKiANghlNDjIK_YyPkIwrl1AOFyyzwDc=s88-nd-c-c0xffffffff-rj-k-no`,
+      text: '게임',
+      src:
+        '//yt3.ggpht.com/Ww5_zdMhr5NBl3S8oF_Bh5udD-mSL-OlK6TDXbMRZIA0-HRWSmCDKiANghlNDjIK_YyPkIwrl1AOFyyzwDc=s88-nd-c-c0xffffffff-rj-k-no',
       isSvg: false,
-      isRound: true
+      isRound: true,
     },
     {
-      text: "영화",
-      src: `//yt3.ggpht.com/SGi-NhbhICGMxn9JZaBjPP7hltnG4GKJvTpcwd79fh2rNR4xbrzCF0fYXOfi-UdFSWF9QAco-Y1ERtsEsw=s88-nd-c-c0xffffffff-rj-k-no`,
+      text: '영화',
+      src:
+        '//yt3.ggpht.com/SGi-NhbhICGMxn9JZaBjPP7hltnG4GKJvTpcwd79fh2rNR4xbrzCF0fYXOfi-UdFSWF9QAco-Y1ERtsEsw=s88-nd-c-c0xffffffff-rj-k-no',
       isSvg: false,
-      isRound: true
+      isRound: true,
     },
     {
-      text: "TV 프로그램",
-      src: `https://yt3.ggpht.com/a-/AN66SAwhH_FokcRmBbBOino1McW1aa_Yk1fsetD9Sg=s88-mo-c-c0xffffffff-rj-k-no`,
+      text: 'TV 프로그램',
+      src:
+        'https://yt3.ggpht.com/a-/AN66SAwhH_FokcRmBbBOino1McW1aa_Yk1fsetD9Sg=s88-mo-c-c0xffffffff-rj-k-no',
       isSvg: false,
-      isRound: true
+      isRound: true,
     },
     {
-      text: "뉴스",
-      src: `//yt3.ggpht.com/MoCPB26tigFjd5XOGWHnXWgo39nVmIZBEZoNX5A4E450JJ2EQLYNRk6WtKprmuy5Q-gdHC9GgCTl6vdyrw=s88-nd-c-c0xffffffff-rj-k-no`,
+      text: '뉴스',
+      src:
+        '//yt3.ggpht.com/MoCPB26tigFjd5XOGWHnXWgo39nVmIZBEZoNX5A4E450JJ2EQLYNRk6WtKprmuy5Q-gdHC9GgCTl6vdyrw=s88-nd-c-c0xffffffff-rj-k-no',
       isSvg: false,
-      isRound: true
+      isRound: true,
     },
     {
-      text: "실시간",
-      src: `//yt3.ggpht.com/5HkUAx2SOolanKFGX7Au5O84m4XbzvjpxXowcw2EYjbZmUObb_MzjZiiSDfy3z9ImpC0PCuZIB_dlPnEqQ=s88-nd-c-c0xffffffff-rj-k-no`,
+      text: '실시간',
+      src:
+        '//yt3.ggpht.com/5HkUAx2SOolanKFGX7Au5O84m4XbzvjpxXowcw2EYjbZmUObb_MzjZiiSDfy3z9ImpC0PCuZIB_dlPnEqQ=s88-nd-c-c0xffffffff-rj-k-no',
       isSvg: false,
-      isRound: true
+      isRound: true,
     },
     {
-      text: "주목받는 동영상",
-      src: `https://yt3.ggpht.com/a-/AN66SAxolYSZ7z95fmO69tcaJ7LwL1WxKLavCbObjA=s88-mo-c-c0xffffffff-rj-k-no`,
+      text: '주목받는 동영상',
+      src:
+        'https://yt3.ggpht.com/a-/AN66SAxolYSZ7z95fmO69tcaJ7LwL1WxKLavCbObjA=s88-mo-c-c0xffffffff-rj-k-no',
       isSvg: false,
-      isRound: true
+      isRound: true,
     },
     {
-      text: "360° 동영상",
-      src: `//yt3.ggpht.com/tsC_7jRK1bv2Ozoj8OgQWhnYrSrRBlafApizaSLusgBrc5laVe8swaUAnBg6OTCCXTv9MOultJkzqYmNmg=s88-nd-c-c0xffffffff-rj-k-no`,
+      text: '360° 동영상',
+      src:
+        '//yt3.ggpht.com/tsC_7jRK1bv2Ozoj8OgQWhnYrSrRBlafApizaSLusgBrc5laVe8swaUAnBg6OTCCXTv9MOultJkzqYmNmg=s88-nd-c-c0xffffffff-rj-k-no',
       isSvg: false,
-      isRound: true
-    }
+      isRound: true,
+    },
   ];
 }
 
-export function getChannelSearchItem() {
+export function getChannelSearchItem(): IImgItem {
   return {
-    text: "채널 탐색",
-    src: `//s.ytimg.com/yts/img/innertube/guide/add_channel_guide-vflSJDanE.png`,
+    text: '채널 탐색',
+    src:
+      '//s.ytimg.com/yts/img/innertube/guide/add_channel_guide-vflSJDanE.png',
     isSvg: false,
-    isRound: false
+    isRound: false,
   };
 }
 
-export function getYoutubeMoreItems() {
+export function getYoutubeMoreItems(): IItem[] {
   return [
     {
-      text: "YouTube Premium",
+      text: 'YouTube Premium',
       src: (
         <svg
           viewBox="0 0 24 24"
@@ -157,10 +174,10 @@ export function getYoutubeMoreItems() {
         </svg>
       ),
       isSvg: true,
-      isRound: false
+      isRound: false,
     },
     {
-      text: "실시간",
+      text: '실시간',
       src: (
         <svg
           viewBox="0 0 24 24"
@@ -176,15 +193,15 @@ export function getYoutubeMoreItems() {
         </svg>
       ),
       isSvg: true,
-      isRound: false
-    }
+      isRound: false,
+    },
   ];
 }
 
-export function getSettingsItems() {
+export function getSettingsItems(): IItem[] {
   return [
     {
-      text: "설정",
+      text: '설정',
       src: (
         <svg
           viewBox="0 0 24 24"
@@ -199,10 +216,10 @@ export function getSettingsItems() {
         </svg>
       ),
       isSvg: true,
-      isRound: false
+      isRound: false,
     },
     {
-      text: "신고 기록",
+      text: '신고 기록',
       src: (
         <svg
           viewBox="0 0 24 24"
@@ -217,10 +234,10 @@ export function getSettingsItems() {
         </svg>
       ),
       isSvg: true,
-      isRound: false
+      isRound: false,
     },
     {
-      text: "고객센터",
+      text: '고객센터',
       src: (
         <svg
           viewBox="0 0 24 24"
@@ -235,10 +252,10 @@ export function getSettingsItems() {
         </svg>
       ),
       isSvg: true,
-      isRound: false
+      isRound: false,
     },
     {
-      text: "의견 보내기",
+      text: '의견 보내기',
       src: (
         <svg
           viewBox="0 0 24 24"
@@ -254,7 +271,7 @@ export function getSettingsItems() {
         </svg>
       ),
       isSvg: true,
-      isRound: false
-    }
+      isRound: false,
+    },
   ];
 }

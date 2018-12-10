@@ -1,8 +1,8 @@
-import "./sideBarItem.css";
+import './sideBarItem.css';
 
-import * as React from "react";
+import * as React from 'react';
 
-import SideItemImage from "./sideItemImage";
+import SideItemImage from './sideItemImage';
 
 export interface IProps {
   src: React.ReactNode;
@@ -12,7 +12,7 @@ export interface IProps {
 }
 
 class SideBarItem extends React.Component<IProps, {}> {
-  public render() {
+  public render(): JSX.Element {
     const { src, text, isRound, isSvg } = this.props;
     return (
       <div className="sideItemContainer">

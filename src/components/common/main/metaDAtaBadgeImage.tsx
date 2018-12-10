@@ -1,8 +1,8 @@
-import * as React from "react";
-import "./metaDataBadgeImage.css";
+import * as React from 'react';
+import './metaDataBadgeImage.css';
 
 class MetaDataBadgeImage extends React.Component {
-  public render() {
+  public render(): JSX.Element {
     const src = (
       <svg
         className="metaDataBadgeImage"

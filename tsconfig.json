@@ -3,6 +3,8 @@
     "strict": true,
     "noFallthroughCasesInSwitch": true,
     "noUnusedParameters": true,
+    "alwaysStrict": true,
+    "declaration": true,
     "baseUrl": ".",
     "outDir": "build/dist",
     "module": "esnext",
@@ -21,7 +23,7 @@
     "strictNullChecks": true,
     "noUnusedLocals": true
   },
-  "include": ["src"],
+  "include": ["src/**/*"],
   "exclude": [
     "node_modules",
     "build",

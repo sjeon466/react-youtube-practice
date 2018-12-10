@@ -1,9 +1,9 @@
-import "./App.css";
+import './App.css';
 
-import * as React from "react";
+import * as React from 'react';
 
-import Body from "./components/body";
-import NavBar from "./components/navBar";
+import Body from './components/body';
+import NavBar from './components/navBar';
 
 export interface IState {
   sideDrawerOpen: boolean;
@@ -11,10 +11,10 @@ export interface IState {
 
 class App extends React.Component<{}, IState> {
   public state = {
-    sideDrawerOpen: true
+    sideDrawerOpen: true,
   };
 
-  public render() {
+  public render(): JSX.Element {
     return (
       <div className="App">
         <div className="navBar">
@@ -27,7 +27,7 @@ class App extends React.Component<{}, IState> {
     );
   }
 
-  private handleMenuButtonClick = () => {
+  private handleMenuButtonClick = (): void => {
     this.setState((prevState: IState) => {
       return { sideDrawerOpen: !prevState.sideDrawerOpen };
     });

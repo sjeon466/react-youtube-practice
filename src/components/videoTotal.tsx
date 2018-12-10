@@ -1,12 +1,12 @@
-import "./videoTotal.css";
+import './videoTotal.css';
 
-import * as React from "react";
+import * as React from 'react';
 
-import { IVideo } from "../services/fakeTopicServices";
-import MetaDataBadgeImage from "./common/main/metaDAtaBadgeImage";
-import ThumbNailImage from "./common/main/thumbNailImage";
-import VideoTimeText from "./common/main/videoTimeText";
-import WatchLaterButton from "./common/main/watchLaterButton";
+import { IVideo } from '../services/fakeTopicServices';
+import MetaDataBadgeImage from './common/main/metaDataBadgeImage';
+import ThumbNailImage from './common/main/thumbNailImage';
+import VideoTimeText from './common/main/videoTimeText';
+import WatchLaterButton from './common/main/watchLaterButton';
 
 // import { getEntries } from "./../services/fakeTopicServices";
 
@@ -22,7 +22,7 @@ interface IProps {
 }
 
 class VideoTotal extends React.Component<IProps, {}> {
-  public render() {
+  public render(): JSX.Element {
     const { videoEntries, currentTopic } = this.props;
     return (
       <div className="videoTotal__videoTotalContainer">
@@ -31,7 +31,7 @@ class VideoTotal extends React.Component<IProps, {}> {
         </div>
 
         <div className="videoTotal__videoListContainer">
-          {videoEntries.map(entry => (
+          {videoEntries.map((entry) => (
             <div
               className="videoTotal__videoEntryOuterContainer"
               key={entry.id}
@@ -84,7 +84,7 @@ class VideoTotal extends React.Component<IProps, {}> {
 
 export default VideoTotal;
 
-/* 
+/*
 <p className="creator">{entry.videoCreator}</p>
 <div id="metadata-line">
   <span>{entry.numViews} ·</span>

@@ -1,13 +1,13 @@
-import * as React from "react";
-import "./search.css";
-import SearchButton from "./searchButton";
+import * as React from 'react';
+import './search.css';
+import SearchButton from './searchButton';
 export interface IProps {
   className: string;
 }
 class SearchBar extends React.Component<IProps, {}> {
-  public render() {
+  public render(): JSX.Element {
     return (
-      <div className={"navbar__searchOuterContainer " + this.props.className}>
+      <div className={`navbar__searchOuterContainer ${this.props.className}`}>
         <div className="navbar__searchContainer">
           <div className="navbar__searchFieldContainer">
             <input className="navbar__input" type="text" placeholder="검색" />

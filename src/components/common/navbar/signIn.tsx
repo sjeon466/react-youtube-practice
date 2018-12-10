@@ -1,11 +1,11 @@
-import * as React from "react";
-import "./signIn.css";
+import * as React from 'react';
+import './signIn.css';
 
 export interface IProps {
   className: string;
 }
 
-const SignIn = () => {
+const SignIn = (): JSX.Element => {
   return (
     <div id="signInContainer">
       <a className="signInLink" href="./">

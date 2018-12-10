@@ -1,12 +1,12 @@
-import * as React from "react";
-import "./videoTimeText.css";
+import * as React from 'react';
+import './videoTimeText.css';
 
 interface IProps {
   className: string;
 }
 
 class VideoTimeText extends React.Component<IProps, {}> {
-  public render() {
+  public render(): JSX.Element {
     return (
       <div className="main__videoTimeTextContainer">
         <div className="main__videoTimeText">12:14</div>

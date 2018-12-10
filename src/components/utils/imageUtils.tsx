@@ -1,24 +1,28 @@
-import * as React from "react";
+import * as React from 'react';
 
-function createMarkup(svgSource: React.ReactNode) {
+interface IDangerouslyHtmlElememt {
+  __html: string;
+}
+
+function createMarkup(svgSource: React.ReactNode): IDangerouslyHtmlElememt {
   return {
-    __html: `${svgSource}`
+    __html: `${svgSource}`,
   };
 }
 
 export function makeImgfromSrc(
   url: string,
-  width: number = 40,
-  height: number = 40,
+  width = 40,
+  height = 40,
   isCategoryIcon: boolean,
   linkUrl: string
-) {
+): JSX.Element {
   let style: { width: number; height: number; borderRadius?: string } = {
     width,
-    height
+    height,
   };
   if (isCategoryIcon) {
-    style = { ...style, borderRadius: "50%" };
+    style = { ...style, borderRadius: '50%' };
   }
   if (linkUrl) {
     return (
@@ -32,10 +36,10 @@ export function makeImgfromSrc(
 
 export function makeImgFromSvg(
   svgSource: React.ReactNode,
-  width: number = 40,
-  height: number = 40,
+  width = 40,
+  height = 40,
   linkUrl: string
-) {
+): JSX.Element {
   const markUp = createMarkup(svgSource);
   if (linkUrl) {
     return (
@@ -43,12 +47,11 @@ export function makeImgFromSvg(
         <div style={{ width, height }} dangerouslySetInnerHTML={markUp} />
       </a>
     );
-  } else {
-    return (
-      <div
-        style={{ width, height }}
-        dangerouslySetInnerHTML={createMarkup(svgSource)}
-      />
-    );
   }
+  return (
+    <div
+      style={{ width, height }}
+      dangerouslySetInnerHTML={createMarkup(svgSource)}
+    />
+  );
 }

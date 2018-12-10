@@ -1,21 +1,21 @@
-import * as React from "react";
+import * as React from 'react';
 export interface IProps {
   className: string;
   onClick(): void;
 }
 
 class MenuButton extends React.Component<IProps, {}> {
-  public render() {
+  public render(): JSX.Element {
     const svgSrc = `<svg viewBox="0 0 24 24" preserveAspectRatio="xMidYMid meet" focusable="false" class="style-scope yt-icon" style="pointer-events: none; display: block; width: 100%; height: 100%;"><g class="style-scope yt-icon">
     <path style="fill:rgba(17,17,17,0.4);" d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z" class="style-scope yt-icon"></path>
   </g></svg>`;
     const style = {
-      background: "transparent",
-      border: "none",
-      boxSizing: "border-box",
-      cursor: "pointer",
-      display: "block",
-      fontFamily: "Roboto, Arial, sans-serif",
+      background: 'transparent',
+      border: 'none',
+      boxSizing: 'border-box',
+      cursor: 'pointer',
+      display: 'block',
+      fontFamily: 'Roboto, Arial, sans-serif',
       fontSize: 0,
       height: 40,
       marginBottom: 0,
@@ -26,8 +26,8 @@ class MenuButton extends React.Component<IProps, {}> {
       paddingLeft: 8,
       paddingRight: 8,
       paddingTop: 8,
-      position: "relative",
-      width: 40
+      position: 'relative',
+      width: 40,
     } as React.CSSProperties;
     return (
       <button

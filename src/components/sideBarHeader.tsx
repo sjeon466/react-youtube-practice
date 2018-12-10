@@ -1,16 +1,16 @@
-import "./sideBarHeader.css";
+import './sideBarHeader.css';
 
-import * as React from "react";
+import * as React from 'react';
 
-import Logo from "./common/navbar/logo";
-import MenuButton from "./common/navbar/menuButton";
+import Logo from './common/navbar/logo';
+import MenuButton from './common/navbar/menuButton';
 
 export interface IProps {
   className: string;
   onMenuButtonClick(): void;
 }
 class SideBarHeader extends React.Component<IProps> {
-  public render() {
+  public render(): JSX.Element {
     return (
       <div className="sideBar__HeaderContainer ">
         <MenuButton

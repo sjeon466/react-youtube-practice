@@ -1,17 +1,17 @@
-import "./main.css";
+import './main.css';
 
-import * as React from "react";
+import * as React from 'react';
 
-import { ITopic } from "../services/fakeTopicServices";
-import { getTopics } from "./../services/fakeTopicServices";
-import VideoTotal from "./videoTotal";
+import { ITopic } from '../services/fakeTopicServices';
+import { getTopics } from './../services/fakeTopicServices';
+import VideoTotal from './videoTotal';
 
 export interface IProps {
   className: string;
 }
 
 class Main extends React.Component<IProps, {}> {
-  public render() {
+  public render(): JSX.Element {
     const topics = getTopics();
     return (
       <div className="main__mainContainer">
